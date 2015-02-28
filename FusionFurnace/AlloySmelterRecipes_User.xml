@@ -1,0 +1,134 @@
+<!-- 
+Custom recipes that will not be over written by Ender IO are added here.
+Examples of recipes can be found in AlloySmelterRecipes_Core.xml and general format
+documentation in SAGMillRecipes_Core/User.
+
+As well as adding custom recipes the operation of the Alloy Smelter as a vanilla furnace 
+can be controlled. It can be disabled completely by simply adding this line:
+
+  <vanillaFurnaceRecipes enabled="false"/>    
+
+It is also possible to selectively disable vanilla furnace recipes.
+The following example disables the smelting of iron ingots, ender pearls and any form of iron ore registered in the
+ore dictionary.
+
+  <vanillaFurnaceRecipes>    
+    <exclude>
+      <itemStack itemID="265" /> 
+      <itemStack itemID="368" /> 
+      <itemStack oreDictionary="oreIron" />  
+    </exclude>
+
+  </vanillaFurnaceRecipes>
+  
+  Add this line to disbale the creation of TE alloys using the Alloy Smelter.
+  <recipeGroup name="Thermal Expansion" enabled="false"/>
+-->
+
+<AlloySmelterRecipes>
+
+<recipeGroup name="SimpleOresFusion">
+
+<recipe name="smallBronze" energy cost="3000">
+  <input>
+    <itemStack oreDictionary="ingotCopper"/>
+    <itemStack oreDictionary="ingotTin"/>
+    <itemStack modID="minecraft" itemName="dye" itemMeta="15"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="small_bronze_chunk" exp="0"/>
+  </output>
+</recipe>
+
+<recipe name="mediumBronze" energy cost="3500">
+  <input>
+    <itemStack oreDictionary="ingotCopper"/>
+    <itemStack oreDictionary="ingotTin"/>
+    <itemStack modID="minecraft" itemName="gunpowder"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="medium_bronze_chunk" exp="0"/>
+  </output>
+</recipe>
+
+<recipe name="largeBronze" energy cost="4000">
+  <input>
+    <itemStack oreDictionary="ingotCopper"/>
+    <itemStack oreDictionary="ingotTin"/>
+    <itemStack modID="minecraft" itemName="redstone"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="large_bronze_chunk" exp="0"/>
+  </output>
+</recipe>
+
+<recipe name="smallThyrium" energyCost="5000">
+  <input>
+    <itemStack oreDictionary="ingotMithril"/>
+    <itemStack oreDictionary="ingotAdamantium"/>
+    <itemStack modID="minecraft" itemName="redstone"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="small_thyrium_chunk" exp="0"/>
+  </output>
+</recipe>
+
+<recipe name="mediumThyrium" energyCost="5500">
+  <input>
+    <itemStack oreDictionary="ingotMithril"/>
+    <itemStack oreDictionary="ingotAdamantium"/>
+    <itemStack modID="minecraft" itemName="dye" itemMeta="4"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="medium_thyrium_chunk" exp="0"/>
+  </output>
+</recipe>
+
+<recipe name="largeThyrium" energyCost="6000">
+  <input>
+    <itemStack oreDictionary="ingotMithril"/>
+    <itemStack oreDictionary="ingotAdamantium"/>
+    <itemStack modID="minecraft" itemName="glowstone_dust"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="large_thyrium_chunk" exp="0"/>
+  </output>
+</recipe>
+
+<recipe name="smallSinisite" energyCost="8000">
+  <input>
+    <itemStack oreDictionary="ingotMithril"/>
+    <itemStack modID="simpleores" itemName="onyx_gem"/>
+    <itemStack modID="minecraft" itemName="glowstone_dust"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="small_sinisite_chunk" exp="0"/>
+  </output>
+</recipe>
+
+<recipe name="mediumSinisite" energyCost="8500">
+  <input>
+    <itemStack oreDictionary="ingotMithril"/>
+    <itemStack modID="simpleores" itemName="onyx_gem"/>
+    <itemStack modID="minecraft" itemName="blaze_powder"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="medium_sinisite_chunk" exp="0"/>
+  </output>
+</recipe>
+
+<recipe name="largeSinisite" energyCost="9000">
+  <input>
+    <itemStack oreDictionary="ingotMithril"/>
+    <itemStack modID="simpleores" itemName="onyx_gem"/>
+    <itemStack modID="minecraft" itemName="ghast_tear"/>
+  </input>
+  <output>
+    <itemStack modID="fusionplugin" itemName="large_sinisite_chunk" exp="0"/>
+  </output>
+</recipe>
+
+</recipeGroup>
+  
+</AlloySmelterRecipes>  
+
