@@ -29,39 +29,6 @@ ore dictionary.
 
 <recipeGroup name="SimpleOresFusion">
 
-<recipe name="smallBronze" energy cost="3000">
-  <input>
-    <itemStack oreDictionary="ingotCopper"/>
-    <itemStack oreDictionary="ingotTin"/>
-    <itemStack modID="minecraft" itemName="dye" itemMeta="15"/>
-  </input>
-  <output>
-    <itemStack modID="fusionplugin" itemName="small_bronze_chunk" exp="0"/>
-  </output>
-</recipe>
-
-<recipe name="mediumBronze" energy cost="3500">
-  <input>
-    <itemStack oreDictionary="ingotCopper"/>
-    <itemStack oreDictionary="ingotTin"/>
-    <itemStack modID="minecraft" itemName="gunpowder"/>
-  </input>
-  <output>
-    <itemStack modID="fusionplugin" itemName="medium_bronze_chunk" exp="0"/>
-  </output>
-</recipe>
-
-<recipe name="largeBronze" energy cost="4000">
-  <input>
-    <itemStack oreDictionary="ingotCopper"/>
-    <itemStack oreDictionary="ingotTin"/>
-    <itemStack modID="minecraft" itemName="redstone"/>
-  </input>
-  <output>
-    <itemStack modID="fusionplugin" itemName="large_bronze_chunk" exp="0"/>
-  </output>
-</recipe>
-
 <recipe name="smallThyrium" energyCost="5000">
   <input>
     <itemStack oreDictionary="ingotMithril"/>
